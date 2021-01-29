@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
         
         Home()
@@ -63,6 +65,47 @@ struct Home: View {
         
         .background(Color.black.opacity(0.07).edgesIgnoringSafeArea(.all))
         .edgesIgnoringSafeArea(.all)
+        
+        
+    }
+    
+}
+
+// Caroussel list
+
+struct HScrollView : View {
+    
+    @Binding var data : [TravelData]
+    //Foe expanding view...
+    @Binding var show : Bool
+    
+    var body: some View {
+        
+        HStack(spacing: 0){
+            
+            ForEach(self.data){i in
+                
+                ZStack{
+                    Image(i.image)
+                        .resizable()
+                        .aspectRatio(1, contentMode: .fill)
+
+                    
+                }
+                
+                
+                
+                
+                
+                
+                
+            }
+            
+            
+            
+        }
+        
+        
         
         
     }

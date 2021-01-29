@@ -13,6 +13,8 @@
 		1CEBD9B625C326B6003903F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBD9A125C326B1003903F0 /* ContentView.swift */; };
 		1CEBD9B725C326B6003903F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEBD9A225C326B6003903F0 /* Assets.xcassets */; };
 		1CEBD9B825C326B6003903F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEBD9A225C326B6003903F0 /* Assets.xcassets */; };
+		1CEBD9C425C3AA6A003903F0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBD9C325C3AA6A003903F0 /* Location.swift */; };
+		1CEBD9C525C3AA6A003903F0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBD9C325C3AA6A003903F0 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		1CEBD9AF25C326B6003903F0 /* TravelJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEBD9B125C326B6003903F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CEBD9B225C326B6003903F0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1CEBD9C325C3AA6A003903F0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				1CEBD9A025C326B1003903F0 /* TravelJournalApp.swift */,
 				1CEBD9A125C326B1003903F0 /* ContentView.swift */,
 				1CEBD9A225C326B6003903F0 /* Assets.xcassets */,
+				1CEBD9C325C3AA6A003903F0 /* Location.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -188,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CEBD9B525C326B6003903F0 /* ContentView.swift in Sources */,
+				1CEBD9C425C3AA6A003903F0 /* Location.swift in Sources */,
 				1CEBD9B325C326B6003903F0 /* TravelJournalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CEBD9B625C326B6003903F0 /* ContentView.swift in Sources */,
+				1CEBD9C525C3AA6A003903F0 /* Location.swift in Sources */,
 				1CEBD9B425C326B6003903F0 /* TravelJournalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
