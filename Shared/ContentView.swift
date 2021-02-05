@@ -24,6 +24,10 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct Home: View {
+    
+      @State var show = false
+      @State var data = false
+    
     var body: some View {
         
         ZStack {
@@ -55,9 +59,11 @@ struct Home: View {
                 
                 GeometryReader{g in
                     
+                    HScrollView(data: self.$data, show: self.$show, size: g.frame(in: .global))
                     
                 }
                 
+                padding(.bottom, (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! + 10)
                 
             }
           
@@ -78,6 +84,7 @@ struct HScrollView : View {
     @Binding var data : [TravelData]
     //Foe expanding view...
     @Binding var show : Bool
+    var size: CGRect
     
     var body: some View {
         
@@ -89,25 +96,31 @@ struct HScrollView : View {
                     Image(i.image)
                         .resizable()
                         .aspectRatio(1, contentMode: .fill)
+                        .frame(width: self.size.width - 30, height: self.size.height)
+                        // 'fill' will take extra space
+                        .contentShape(Rectangle())
 
-                    
                 }
                 
-                
-                
-                
-                
-                
-                
+              // fixed frame for carousel list...
+                .frame(width: self.size.width, height: self.size.height)
+               
             }
-            
-            
             
         }
         
-        
-        
+    }
+    
+}
+
+struct Carousel : UIViewRepresentable {
+    typealias UIViewType = <#type#>
+    
+    func makeUIView(content: Context) -> UIScrollView {
         
     }
     
+    func updateUIView() -> <#return type#> {
+        <#function body#>
+    }
 }
